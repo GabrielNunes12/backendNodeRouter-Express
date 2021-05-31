@@ -1,13 +1,7 @@
 exports.cadastro = (req, res) => {
-  res.send(`
-    <form action="/registro/:idRegistro" method="POST">
-      <label> Name: </label>
-      <input type="text" name="name" placeholder="your name"/>
-      <button> Enviar </button>
-    </form>
-  `)
+  res.render('index');
 }
 
 exports.showRegistro = (req, res) => {
-  res.send(req.params.idRegistro.value);
+  res.send(req.params.idProduto);
 }
